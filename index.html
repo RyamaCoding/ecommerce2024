@@ -7,34 +7,63 @@
     <title>eCommerce2024</title>
   </head>
   <body>
-    <nav>
-      <img src="./assets/Library.svg" class="nav__img" alt="Logo" />
-      <div class="nav__list--wrapper">
-        <ul class="nav__list">
-          <li><a class="nav__link" href="#home">Home</a></li>
-          <li><a class="nav__link" href="#contact">Contact</a></li>
-          <li><a class="nav__link nav__link--books" href="#books">Books</a></li>
-        </ul>
+    <nav id="nav">
+      <div class="nav__container">
+        <img src="./assets/Library.svg" class="nav__img" alt="Logo" />
+        <div class="nav__list--wrapper">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+            <li>
+              <a class="nav__link nav__link--books" href="#books">Books</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <main>
-      <section id="home">
-        <div class="container">
-          <div class="row">
-            <div>
-              <h1>England's most awarded online library platform</h1>
-              <p>
-                Find your dream book with <span class="purple">Library</span>
-              </p>
-              <button class="home__button">Browse Books</button>
-            </div>
-            <figure>
-                <img src="./assets/Undraw_Books.svg" alt="">
-            </figure>
-          </div>
+    <header>
+      <div class="header__container">
+        <div class="header__description">
+          <h1 class="header__title">
+            England's most awarded online library platform
+          </h1>
+          <p class="header__para">
+            Find your dream book with <span class="purple">Library</span>
+          </p>
+          <button class="home__button">Browse Books</button>
         </div>
-      </section>
-    </main>
+        <figure class="header__img--wrapper">
+          <img src="./assets/Undraw_Books.svg" class="header__img" alt="" />
+        </figure>
+      </div>
+    </header>
   </body>
+
+  <main>
+    <section id="highlights">
+      <div class="highlights__container">
+        <p class="highlights__title">
+          Why choose <span class="purple">Library</span>
+        </p>
+        <div class="highlights__library--wrapper">
+            <div class="highlights__library">
+                <img class="library__img" src="" alt="">
+                <p class="library__title">Easy and Quick</p>
+                <p class="library__description">Get access to the book you purchased instantly</p>
+            </div>
+            <div class="highlights__library">
+                <img class="library__img" src="" alt="">
+                <p class="library__title">10,000+ books</p>
+                <p class="library__description">Library has books in all your favourite categories</p>
+            </div>
+            <div class="highlights__library">
+                <img class="library__img" src="" alt="">
+                <p class="library__title">Easy and Quick</p>
+                <p class="library__description">Get access to the book you purchased instantly</p>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </html>
