@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border
 }
+
 body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -230,26 +231,26 @@ header{
     max-width: 280px;
 }
 
-/* Features */
+/* FEATURED */
 
 #features{
     background-color: rgba(115, 66, 214, 0.1);
     padding-top: 8vw;
 }
 
+.books {
+    display: flex;
+}
+
+.book {
+    width: 25%;
+    padding: 24px;
+}
+
 .book__img{
     max-height: 380px;
     transition: all 300ms ease;
     cursor: not-allowed;
-}
-
-.books{
-    display: flex;
-}
-
-.book{
-    width: 25%;
-    padding: 24px;
 }
 
 .book__img--wrapper{
@@ -263,7 +264,7 @@ header{
     transform: scale(1.03);
 }
 
-.book__title {
+.book__title{
     font-size: 20px;
     margin-bottom: 8px;
 }
@@ -281,5 +282,16 @@ header{
 .book__price--normal{
     text-decoration: line-through;
     padding-right: 6px;
-    color: #bfbfbf;
+}
+
+/* LATEST */ 
+
+#latest .books{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#latest .book{
+    width: 18%;
 }
